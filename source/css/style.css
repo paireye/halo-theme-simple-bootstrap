@@ -289,3 +289,16 @@ footer .link-info a {
 
 footer .link-share {
 }
+
+
+/*解决页面空白较多 footer没有在下面*/
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+
+.container-fluid,.container{
+    min-height: calc(100% - 155px);
+}
