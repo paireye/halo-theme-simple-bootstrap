@@ -1,5 +1,5 @@
 <#--页脚ok-->
-<footer class="py-4 border-top bg-white">
+<footer class="py-3 border-top bg-white">
     <div class="container d-flex flex-md-row flex-column justify-content-between align-items-center px-lg-2">
         <div class="wrapper">
             <#-- 受版权保护的标记 -->
