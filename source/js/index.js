@@ -52,3 +52,18 @@ $(function () {
     // 加入媒体控制
     $("video, audio").prop('controls', true);
 });
+
+//新增title特效
+var time;
+var normar_title=document.title;
+document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState == 'hidden') {
+        clearTimeout(time);
+        document.title = '客官请留步🙏 ┏(゜ロ゜;)┛';
+    } else {
+        document.title = '你终于回来了😘😘😘';
+        time=setTimeout(function(){ document.title = normar_title; }, 3000);
+
+
+    }
+});
