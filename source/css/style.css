@@ -277,10 +277,15 @@ iframe {
     margin: 0 auto;
     padding: 0 10px;
     text-align: center;
+    font-family: Helvetica Neue, Luxi Sans, DejaVu Sans, Tahoma, Hiragino Sans GB, Microsoft Yahei, sans-serif;
+    font-size: 14px;
 }
 
-.footer a {
-    color: #ff4d3a;
+footer .link-info a {
+    color: #dc3545 !important;
     cursor: pointer;
     text-decoration: none;
+}
+
+footer .link-share {
 }

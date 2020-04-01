@@ -8,7 +8,7 @@
             </div>
 
             <#-- 分享 -->
-            <div class="link-info">
+            <div class="link-share">
                 <#--RSS-->
                 <#if (settings.open_rss)?? && settings.open_rss?c == 'true'>
                     <a class="text-dark mr-3" target="_blank" href="${atom_url!}">
