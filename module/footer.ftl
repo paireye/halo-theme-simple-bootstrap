@@ -1,5 +1,5 @@
 <#--页脚ok-->
-<footer class="py-3 border-top bg-white">
+<footer class="py-2 border-top bg-white">
     <div class="container d-flex flex-md-row flex-column justify-content-between align-items-center px-lg-2">
         <div class="wrapper">
             <#-- 受版权保护的标记 -->
@@ -59,8 +59,8 @@
             </div>
 
             <#-- 公共脚本 -->
-            <div>
-                <span class="text-muted"><@global.footer/></span>
+            <div class="link-info">
+                <@global.footer/>
             </div>
         </div>
     </div>
