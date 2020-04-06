@@ -5,9 +5,12 @@ Status: OK
 /*列表项的总样式*/
 .list-item {
     font-family: "Courier New", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    padding: 20px 0;
 }
-
+.align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+    margin: 10px 0;
+}
 /*这里的定位后期标签过多的时候可能会出现问题*/
 #tags {
     position: sticky;
