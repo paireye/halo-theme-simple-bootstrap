@@ -301,4 +301,5 @@ body{
 
 .container-fluid,.container{
     min-height: calc(100% - 155px);
+    margin: 0 auto;
 }
