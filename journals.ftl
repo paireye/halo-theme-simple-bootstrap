@@ -1,7 +1,6 @@
 <#--日志界面OK-->
 <#include "module/layout.ftl">
-<@layout
-title="${user.nickname!}的日志 | ${blog_title!}">
+<@layout title="${blog_title!}">
 
     <#--下方正文部分-->
     <div class="container-fluid" style="background: #f8fafc;">

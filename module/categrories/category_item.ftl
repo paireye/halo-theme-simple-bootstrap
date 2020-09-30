@@ -9,9 +9,11 @@
                        background-image: url('${user.avatar!}');
                        background-size: cover;"></i>
             <div class="dialogue-box rounded">
-                <h3 id="${category.name}" class="section-title">
-                    <span>${category.name}</span>
-                </h3>
+                <a class="section-item" href="${category.fullPath!}">
+                    <h3 id="${category.name}" class="section-title">
+                        <span>${category.name}</span>(${category.postCount!})
+                    </h3>
+                </a>
             </div>
         </div>
         <#--列表项-->

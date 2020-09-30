@@ -1,10 +1,10 @@
 <#--导航栏ok-->
-<section id="navBar" class="border-bottom bg-white">
-    <nav class="navbar navbar-expand-lg navbar-light container px-lg-2 py-3">
+<section id="navBar" class="border-bottom bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark container px-lg-2 py-3">
 
         <a class="navbar-brand font-weight-bold" href="${blog_url!}">
             <#if (options.blog_logo)?? && options.blog_logo?trim != ''>
-                <img src="${options.blog_logo!}" width="30" height="30"
+                <img src="${options.blog_logo!}" width="30" height="30" style="border-radius: 50%"
                      class="d-inline-block align-top mr-2" alt="${blog_title!}">
             </#if>
             ${blog_title!}
@@ -32,32 +32,6 @@
                         </li>
                     </#list>
                 </@menuTag>
-                <@categoryTag method="list">
-                    <#if categories?? && categories?size gt 0>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown"
-                               role="button"
-                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="d-lg-none d-inline mr-2"><i class="fas fa-list-ul"></i></span>
-                                分类
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-                                <#list categories as categorie>
-                                    <a class="dropdown-item" href="${categorie.fullPath!}">${categorie.name}
-                                        (${categorie.postCount!})</a>
-                                </#list>
-                                <a class="dropdown-item" href="${categories_url!}">
-                                    全部分类
-                                    (<@postTag method="count">
-                                        ${count!}
-                                    </@postTag>)
-                                </a>
-
-                            </div>
-                        </li>
-                    </#if>
-                </@categoryTag>
             </ul>
             <form id="search" class="form-inline my-2 my-lg-0" method="get" action="/search">
                 <input class="form-control mr-sm-2" name="keyword" type="search" value="${keyword!}"

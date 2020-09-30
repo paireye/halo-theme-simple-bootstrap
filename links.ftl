@@ -1,6 +1,6 @@
 <#--链接页面OK-->
 <#include "module/layout.ftl">
-<@layout title="链接 | ${blog_title!}">
+<@layout title="${blog_title!}">
 
     <link rel="stylesheet" href="${theme_base!}/source/css/links.css">
     <style>

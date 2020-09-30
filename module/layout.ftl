@@ -44,6 +44,10 @@
         <#if is_archives?? || is_tags?? || is_categories??>
             <link rel="stylesheet" href="${theme_base!}/source/css/time-line.css">
             <style>
+                /*归档界面分类*/
+                .section-item{
+                    color: #586069;
+                }
                 /* 列表盒子中每一个a标签的划过样式 */
                 ul.title-list li a:hover {
                     color: ${settings.hover_color!'#dc3545'} !important;
